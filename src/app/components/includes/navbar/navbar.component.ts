@@ -11,7 +11,10 @@ export class NavbarComponent implements OnInit {
   searchUser(id:string){
     alert(id)
   }
+  
   ngOnInit(): void {
   }
-
+  reload(){
+    window.location.reload();
+    }
 }

@@ -1,14 +1,14 @@
 <nav class="top-item">
     <div class="form">
         <input [(ngModel)]="userId" id="inputuser" placeholder="Find GIthub User" type="text"  >
-        <button  id="search"><a href="https://aelhajji.github.io/github-users/user/{{userId}}">search</a></button>
+        <button (click)="reload()" id="search"><a routerLink="/user/{{userId}}" >search</a></button>
         <!-- <button  id="search"><a href="/user/{{userId}}">search</a></button> -->
 
     </div>
     <div class="items">
         <!--  github hosting routes --> 
-        <a href="https://aelhajji.github.io/github-users/">HOME</a>
-        <a routerLink="https://aelhajji.github.io/github-users/about">ABOUT</a>
+        <a routerLink="/">HOME</a>
+        <a routerLink="/about">ABOUT</a>
         <!-- default routes -->
         <!-- <a routerLink="/">HOME</a> -->
         <!-- <a routerLink="/about">ABOUT</a> -->
