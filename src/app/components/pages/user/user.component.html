@@ -1,0 +1,28 @@
+<div *ngIf="adminAccount" class="roww">
+    <!-- sec1 -->
+    
+    <app-userinfo [userinfo]='adminAccount'></app-userinfo>
+    <!-- sec2 -->
+    <app-userrepos [repos]="repos" ></app-userrepos>
+    <!-- sec3 -->
+    <app-accinfo [info]='adminAccount'></app-accinfo>
+</div>
+<div class="err" *ngIf="!adminAccount">
+    <img width="300" src="assets/images/GitHub-logo.gif" alt="" srcset="">
+   <p>{{errorMessage}}</p>
+   <!-- <p> {{errorMessage| json}}</p> -->
+</div>
+<style>
+    .err{
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        color: rgb(70, 70, 70);
+        justify-content: center;
+    }
+    .err p{
+        font-size: medium;
+    }
+</style>

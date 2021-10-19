@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: #1f253d;
+    margin-top: 30px;
+    
+    margin-right: 50px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  @media screen and (max-width: 600px) {
+    body {
+      background: #1f253d;
+      margin: 10px;
+    }}

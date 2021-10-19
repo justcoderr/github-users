@@ -1,0 +1,18 @@
+<nav class="top-item">
+    <div class="form">
+        <input [(ngModel)]="userId" id="inputuser" placeholder="Find GIthub User" type="text"  >
+        <!-- <button routerLink="/user/samir" id="search">search</button> -->
+        <button  id="search"><a href="/user/{{userId}}">search</a></button>
+
+    </div>
+    <div class="items">
+        <a routerLink="">HOME</a>
+        <a routerLink="/about">ABOUT</a>
+    </div>
+    <div class="items">
+        <a href="https://github.com/aelhajji"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/abdeljabar-elhajji/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://web.facebook.com/elhajji.abdeljabar/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/_im_abdel/"><i class="fab fa-instagram"></i></a>
+    </div>
+</nav>

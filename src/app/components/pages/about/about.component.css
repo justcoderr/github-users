@@ -1,0 +1,19 @@
+.content {
+    padding-bottom: 20px;
+    margin-top: 20px;
+    min-height: 68vh;
+    background: #394264;
+}
+.content p {
+    width:  80%;
+    margin: 60px auto;
+    font-family:  Arial, Helvetica, sans-serif;
+    
+    color: rgb(112, 111, 111);
+}
+.roww {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: flex-start;
+    text-align: justify;
+}

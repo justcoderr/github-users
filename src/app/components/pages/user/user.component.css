@@ -1,0 +1,13 @@
+.roww {
+    display: grid;
+    grid-template-columns: 30vw 40vw 20vw;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 900px) {
+    .roww {
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: space-between;
+    }
+  }

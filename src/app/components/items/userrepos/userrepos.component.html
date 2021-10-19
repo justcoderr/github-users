@@ -1,0 +1,13 @@
+<div class="carde">
+    <div class="title-card">
+        <h4>Repos</h4>
+    </div>
+   
+    <div *ngFor="let repo of repos" class="item-repo">
+        <p><i class="fas fa-code-branch"></i>  {{repo.name}}</p>
+        <div class="flexx">
+        <a target="blank" href="{{repo.html_url}}"><i class="far fa-code"></i></a>
+        <a target="blank" href="{{repo.html_url}}"><i class="far fa-plus-square"></i></a>
+        </div>
+    </div>
+</div>

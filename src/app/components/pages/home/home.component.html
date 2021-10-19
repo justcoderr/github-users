@@ -1,0 +1,58 @@
+<div class="homee">
+    <img src="assets/images/daftpunktocat-thomas.gif" alt="" srcset="">
+   
+</div>
+<div id="cat">
+    <img class="cat" src="assets/images/65bf29e93f43671504b5f80beb783414.gif" alt="" srcset="">
+</div>
+
+<style>
+    .homee{
+        width: 90vw;
+        display: flex;
+        /* overflow-y: hidden;
+        overflow-x: hidden; */
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+    }
+    #cat{
+        width: 90vw;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .homee img{
+        width: 500px;
+        /* z-index: 10; */
+    }
+    .cat{
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right:  0;
+        margin-top: 340px;
+        animation: catt 6s infinite;
+    }
+    @keyframes catt {
+        0%{
+            margin-right: 12px;
+        }
+        100%{
+            margin-right: 100%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+    .homee img{
+        width: 300px;
+        /* z-index: 10; */
+    }
+    .cat{
+        width: 100px;
+        position: absolute;
+        top: 0;
+        right:  0;
+        margin-top: 460px;
+        animation: catt 6s infinite;
+    }
+}
+</style>

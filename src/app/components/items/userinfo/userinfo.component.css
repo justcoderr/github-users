@@ -1,0 +1,104 @@
+.cardd {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    border-radius: 3px;
+    width: auto;
+    min-height: 70vh;
+    max-height: 70vh;
+    background: #394264;
+  }
+  .folow a{
+    color: white;
+    text-decoration: none;
+}
+  .cardd img {
+    border-radius: 200px;
+    width: 140px;
+    padding: 4px;
+    margin-top: 10px;
+    background-color: gray;
+    height: 140px;
+  }
+
+  .user-name {
+    font-size: 25px;
+    margin: 25px 0 16px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
+
+  .likes {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    /* position: sticky; */
+  }
+
+  .folowers {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    /* border: 10px solid black; */
+
+  }
+
+  .green {
+    color: chartreuse !important;
+  }
+
+  .folowers:hover {
+    background-color: rgb(255, 8, 8) !important;
+    color: whitesmoke;
+
+  }
+
+  .folow {
+    background-color: #e64c65;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    /* border: 10px solid black; */
+  }
+
+  .folow:hover {
+    background-color: rgb(14, 84, 165);
+
+  }
+
+  .center {
+    text-align: start;
+    color: white;
+  }
+
+  .center a {
+    text-align: center;
+    font-size: 15px;
+
+    text-decoration: none;
+    color: white;
+  }
+
+  @media screen and (max-width: 600px) {
+    .roww {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+  }
+
+

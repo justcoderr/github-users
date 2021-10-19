@@ -1,0 +1,27 @@
+<div class="cardd">
+    <img *ngIf="userinfo.avatar_url" width="150px" alt="Anne Hathaway picture"
+        src="{{userinfo.avatar_url}}">
+        <div *ngIf="userinfo.html_url" class="likes">
+            <div class="folowers ">
+                <small>{{userinfo.following}}</small>
+                <small>Folowing</small>
+            </div>
+            <div class="folowers">
+                <small>{{userinfo.followers}}</small>
+                <small>Folowers</small>
+            </div>
+            <div class=" folow">
+                <a target="blank" href="{{userinfo.html_url}}"><i class="fas fa-user-plus"></i> Folow </a>
+            </div>
+        </div>
+    <div class="center">
+        <h1 *ngIf="userinfo.name" class="user-name"> {{userinfo.name }}</h1>
+        <h1 *ngIf="!userinfo.name" class="user-name"> {{userinfo.login }}</h1>
+        <p *ngIf="userinfo.location"><i class="fas fa-map-marker-alt"></i> {{userinfo.location}}</p>
+        <p  *ngIf="userinfo.company"><i class="fas fa-briefcase"></i> {{userinfo.company}} </p>
+        <p *ngIf="userinfo.hireable"><i class="green fab fa-creative-commons-by"></i> Open to work </p>
+        <a *ngIf="userinfo.blog" target="blank" href="{{userinfo.blog}}" > <i class="fas fa-globe"></i> {{userinfo.blog}} </a> <br><br>
+        <a *ngIf="userinfo.twitter_username" href="kjk"><i class="fab fa-twitter"></i>  {{userinfo.twitter_username}}</a>
+    </div>
+    
+</div>

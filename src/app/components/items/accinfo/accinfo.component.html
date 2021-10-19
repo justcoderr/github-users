@@ -1,0 +1,25 @@
+<div class="inforepos">
+    <div class="title-info-card">
+        <h4>Account info</h4>
+    </div>
+    <div *ngIf="info.bio" class="m2">
+    <p  >{{info.bio}}</p>
+    </div>
+    <div *ngIf="info.created_at" class="item-repo-info">
+        <p><i class="fas fa-play"></i> Created at : {{info.created_at | date}}</p>
+    </div>
+    <div *ngIf="info.updated_at" class="item-repo-info">
+        <p><i class="fad fa-code-commit"></i> Last commit : {{info.updated_at | date}}</p>
+    </div>
+    <div *ngIf="info.public_repos" class="item-repo-info">
+        <p><i class="fad fa-plus"></i> Public repos : {{info.public_repos}}</p>
+    </div>
+</div>
+<style>
+    .m2{
+        width: 80%;
+        text-align: justify;
+        margin: auto;
+        color: white;
+    }
+</style>
