@@ -7,10 +7,9 @@ import { UserComponent } from './components/pages/user/user.component';
 
 const routes: Routes = [
   { path: '', component:  HomeComponent}, 
-  { path: 'github-users', component:  HomeComponent}, //adding github users just for github hosting
-  { path: 'github-users/about', component: AboutComponent },
-  {path: 'github-users/user/:id', component:UserComponent},
-  {path: 'github-users/404', component: PagenotfoundComponent},
+  { path: 'about', component: AboutComponent },
+  {path: 'user/:id', component:UserComponent},
+  {path: '404', component: PagenotfoundComponent},
   {path: '**', redirectTo: '/404'}
 ];
 

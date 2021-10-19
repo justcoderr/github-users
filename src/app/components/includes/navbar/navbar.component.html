@@ -2,12 +2,16 @@
     <div class="form">
         <input [(ngModel)]="userId" id="inputuser" placeholder="Find GIthub User" type="text"  >
         <!-- <button routerLink="/user/samir" id="search">search</button> -->
-        <button  id="search"><a href="/github-users/user/{{userId}}">search</a></button>
+        <button  id="search"><a href="github-users/user/{{userId}}">search</a></button>
 
     </div>
     <div class="items">
-        <a routerLink="/github-users">HOME</a>
+        <!--  github hosting routes --> 
+        <a routerLink="github-users/">HOME</a>
         <a routerLink="github-users/about">ABOUT</a>
+        <!-- default routes -->
+        <!-- <a routerLink="/">HOME</a> -->
+        <!-- <a routerLink="/about">ABOUT</a> -->
     </div>
     <div class="items">
         <a href="https://github.com/aelhajji"><i class="fab fa-github"></i></a>
